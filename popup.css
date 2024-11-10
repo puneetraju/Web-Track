@@ -1,0 +1,174 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  #container {
+    padding: 15px;
+    width: 400px;  /* Increase the width of the popup */
+  }
+
+  h1 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+  }
+
+  input {
+    width: 100% ;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  button#add-task {
+    width: 100% ;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button#add-task:hover {
+    background-color: #0056b3;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;  /* Add margin to create space between tasks */
+  }
+
+  li .task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  li .task-name {
+    font-weight: bold;
+    font-size: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;  /* Add an ellipsis for overflowed text */
+    max-width: 80%;  /* Ensure that the task name takes up only 80% of the available space */
+  }
+
+  li .details {
+    font-size: 12px;
+    display: none;
+    margin-top: 5px;
+  }
+
+  li.complete {
+    background-color: #d4edda;
+  }
+
+  .task-actions {
+    display: flex;
+    gap: 10px;
+  }
+
+  .task-actions button {
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+  }
+
+  button.mark-complete {
+    background-color: #28a745;
+    color: white;
+  }
+
+  button.edit-task {
+    background-color: #007bff;
+    color: white;
+    
+  }
+
+  button.delete-task {
+    background-color: #f44336;
+    color: white;
+  }
+  #container {
+    width: 320px;
+    padding: 20px;
+  }
+
+  #container h1 {
+    padding-top: 20px;
+  }
+
+  li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+  li:first-child {
+    margin-top: 15px; /* Adjust the value as needed to increase/decrease the space */
+}
+
+  li .task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  li .task-name {
+    font-weight: bold;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 80%;
+  }
+
+  li .toggle-details {
+    height: 20px;
+    width: 20px;
+    border-radius: 0px; /* Make the button a triangle with no rounded corners */
+    border: none;
+    background-color: transparent;
+    color: black; /* Change the color to black */
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    transform: rotate(0deg); /* Rotate the triangle to point down */
+    transition: transform 0.3s; /* Add a smooth transition for the rotation */
+}
+
+li.complete .toggle-details {
+    transform: rotate(360deg); /* Rotate the triangle to point up when task is complete */
+}
+
+  .task-actions {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  .task-actions button {
+    padding: 5px 10px;
+    font-size: 12px;
+  }

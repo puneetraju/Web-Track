@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    width: 100%;
+  }
+  
+  #container {
+    padding: 20px;
+    max-width: 990px; /* Increase the width of the options page */
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  th {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  td {
+    vertical-align: middle;
+  }
+  .task-list td  {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  
+  .edit-task-name {
+    width: 100%;
+    padding: 6px 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 6px 10px;
+    font-size: 13px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.mark-complete {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  button.mark-complete:hover {
+    background-color: #218838;
+  }
+  
+  button.save-edit {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  button.save-edit:hover {
+    background-color: #0056b3;
+  }
+  
+  button.delete-task {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  button.delete-task:hover {
+    background-color: #d32f2f;
+  }
+  
+  .complete-status {
+    font-weight: bold;
+    color: #28a745;
+  }

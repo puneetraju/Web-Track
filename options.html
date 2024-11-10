@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Tracker</title>
+  <link rel="stylesheet" href="options.css">
+  <style>
+    #task-table {
+      table-layout: fixed;
+      width: 100%;
+    }
+    .no-data {
+      text-align: center;
+      padding: 20px;
+      font-style: italic;
+    }
+    .search-container {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .search-input {
+      padding: 8px;
+      width: 70%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>Web Track Manager</h1>
+    <div class="search-container">
+      <input type="text" id="searchInput" class="search-input" placeholder="Search by name or URL">
+      
+    </div>
+    <table id="task-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>URL</th>
+          <th>Created At</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody class="task-list"></tbody>
+    </table>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>
